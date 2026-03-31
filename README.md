@@ -72,14 +72,9 @@ The IT VLAN retained authorized access, demonstrating role-based network privile
 
 ![IT Allowed to Access Finance](screenshots/testing/it-allowed-finance.jpeg)
 
-### Management VLAN Protection
-Access to the Management VLAN was restricted so that only authorized systems could reach management resources.
 
 #### Unauthorized Access Blocked
 ![Management Access Blocked](screenshots/testing/mgmt-blocked.jpeg)
-
-#### Authorized Access Allowed
-![Management Access Allowed](screenshots/testing/mgmt-allowed.jpeg)
 
 ## DMZ Security
 A DMZ network was created to host a public-facing web server while limiting unnecessary access.
@@ -88,11 +83,6 @@ A DMZ network was created to host a public-facing web server while limiting unne
 The DMZ web service was reachable over HTTP as intended.
 
 ![DMZ HTTP Access](screenshots/testing/dmz-http-success.jpeg)
-
-### ICMP Blocked
-Ping traffic to the DMZ server was blocked to reduce unnecessary exposure.
-
-![DMZ Ping Blocked](screenshots/testing/dmz-ping-blocked.jpeg)
 
 ## Secure Remote Administration
 SSH was configured for secure administrative access to the router. This replaces insecure remote management methods such as Telnet and ensures encrypted login sessions.
@@ -117,37 +107,6 @@ The full device configurations are stored in the repository for reference and re
 - `configurations/router-config.txt`
 - `configurations/switch-config.txt`
 
-## Project Structure
-
-enterprise-network-segmentation-lab/
-│
-├── topology/
-│   └── network-topology.jpeg
-│
-├── configurations/
-│   ├── router-config.txt
-│   └── switch-config.txt
-│
-├── screenshots/
-│   ├── vlan/
-│   │   └── vlan-table.jpeg
-│   ├── routing/
-│   │   └── inter-vlan-success.jpeg
-│   ├── acl/
-│   │   └── acl-rules.jpeg
-│   ├── ssh/
-│   │   └── ssh-login.jpeg
-│   ├── security/
-│   │   └── port-security.jpeg
-│   └── testing/
-│       ├── hr-blocked-finance.jpeg
-│       ├── it-allowed-finance.jpeg
-│       ├── mgmt-blocked.jpeg
-│       ├── mgmt-allowed.jpeg
-│       ├── dmz-http-success.jpeg
-│       └── dmz-ping-blocked.jpeg
-│
-└── README.md
 
 
 Key Takeaways
